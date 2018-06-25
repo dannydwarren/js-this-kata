@@ -1,9 +1,10 @@
-function convert(num) {
-    return provideI(num)
+function convert() {
+    return provideI.bind(this)()
 }
 
-function provideI(num) {
-    return num ? new Array(num).fill().map(()=>'I').join('') : ''
+function provideI() {
+    const count = this.valueOf()
+    return count ? new Array(count).fill().map(()=>'I').join('') : ''
 }
 
 module.exports = convert
