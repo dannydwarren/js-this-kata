@@ -1,0 +1,15 @@
+{
+  "name": "js-this-kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tests.specs.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.2.0"
+  }
+}
