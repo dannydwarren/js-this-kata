@@ -1,9 +1,11 @@
 function convert(num) {
-    return provideI(num)
+    this.num = num
+    this.provideI = provideI
+    return this.provideI()
 }
 
-function provideI(num) {
-    return num ? new Array(num).fill().map(()=>'I').join('') : ''
+function provideI() {
+    return { value: this.num ? new Array(this.num).fill().map(() => 'I').join('') : '' }
 }
 
 module.exports = convert
